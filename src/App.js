@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import Profile from './components/Profile/Profile';
 import user from './json/user.json';
 import statisticalData from './json/statistical-data.json';
-import StatisticsList from './components/Statistics/StatisticsList';
+import Statistics from './components/Statistics/Statistics';
+import './App.css';
     
 
 import FriendList from './components/FriendList/FriendList'
@@ -22,7 +23,7 @@ avatar={user.avatar}
 stats={user.stats}
 />
 
-<StatisticsList title="Upload stats" stats={statisticalData}/>
+<Statistics title="Upload stats" stats={statisticalData}/>
 
 <FriendList friends ={friends}/>
 
